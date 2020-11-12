@@ -36,7 +36,12 @@ function Profile() {
   return (
     <div>
       <h1>Succesfully logged in</h1>
-      <div>Username: {user.name}</div>
+      <p>Username: {user.name}</p>
+      <div>
+      {Object.keys(user).map(key => {
+        return<p>{key}: {user[key]}</p>;
+      })}
+      </div>
       <div>Access Token:
         <TokenBox>
           {token}
