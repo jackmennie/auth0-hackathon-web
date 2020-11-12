@@ -1,7 +1,16 @@
 import React from "react";
 
 function LoginPostForm() {
-  return (<div>Is Working</div>);
+
+  const submitForm = () => {
+    console.log("submitting form");
+  }
+
+  return (<div>
+    <form onSubmit={()=>submitForm()}>
+
+    </form>
+  </div>);
 }
 
 
