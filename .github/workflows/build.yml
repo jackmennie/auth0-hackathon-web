@@ -55,4 +55,4 @@ jobs:
           aws-region: ${{ secrets.AWS_DEFAULT_REGION }}
       # Sync the files from public folder to the kleeut.com bucket
       - name: Deploy to S3
-        run: aws s3 sync ./public s3://jacks-hackathon-auth0-actions --acl public-read
+        run: aws s3 sync ./build s3://jacks-hackathon-auth0-actions --acl public-read
