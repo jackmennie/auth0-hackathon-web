@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import {DropzoneArea} from 'material-ui-dropzone'
 
 function LoginPostForm() {
+  const [files, setFiles] = useState({files: []});
 
-  const submitForm = () => {
+  const handleChange = (files) => {
     console.log("submitting form");
+    setFiles({files});
   }
 
   return (<div>
-    <form onSubmit={()=>submitForm()}>
-
-    </form>
+     <DropzoneArea
+        onChange={handleChange}
+        />
+    <h1>Files: {JSON.stringify(files)}</h1>
   </div>);
 }
 
