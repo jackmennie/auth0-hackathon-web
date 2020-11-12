@@ -23,7 +23,7 @@ function Profile() {
     (async ()=> {
       try {
         const token = await getAccessTokenSilently({
-          audience: "https://my.nib.com.au/api"
+          audience: "https://jacks-api.com.au/api"
         })
 
         setToken(token);
