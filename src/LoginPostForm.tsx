@@ -40,11 +40,14 @@ function LoginPostForm() {
           const response = await axios.post("https://actions-hackathon-backend.herokuapp.com/detect", files.files[0], options);
           console.log(response);
 
-          if(response.data.data.attributes.anger.confidence > 0) {
+          if(response.data.attributes.anger.confidence > 20) {
             console.log("returning anger");
             //@ts-ignore
             window.location = `https://jacks-hackathon.au.auth0.com/continue?state=${state}&anger=${true}`
           }
+
+           //@ts-ignore
+          window.location = `https://jacks-hackathon.au.auth0.com/continue?state=${state}&anger=${false}`
           // history.pushState()
         } catch(e) {
           throw e;
