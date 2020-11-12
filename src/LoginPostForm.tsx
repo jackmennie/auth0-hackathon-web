@@ -23,11 +23,13 @@ function LoginPostForm() {
 
         try {
           const options = {
-            headers: {"Content-Type": "image/png"}
+            headers: {"Content-Type": "image/jpeg"}
           }
 
-          const response = axios.post("some url", file, options);
+          const response = await axios.post("https://actions-hackathon-backend.herokuapp.com/detect", files.files[0], options);
           console.log(response);
+
+          // history.pushState()
         } catch(e) {
           throw e;
         }

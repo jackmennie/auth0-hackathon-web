@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import styled from "styled-components"
 import {Margin} from "styled-components-spacing"
+import { Button } from '@material-ui/core';
 
 
 const TokenBox = styled.div`
@@ -44,7 +45,7 @@ function Profile() {
       </div>
 
     <Margin top={5}>
-      <button onClick={()=>{logout({returnTo: window.location.origin})}}>Logout</button>
+      <Button variant="contained" onClick={()=>{logout({returnTo: window.location.origin})}}>Logout</Button>
       </Margin>
     </div>
     );
