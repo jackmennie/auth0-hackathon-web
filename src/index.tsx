@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import { Auth0Provider } from '@auth0/auth0-react';
 
-const authDomain = "id.nib-cf-test.com";                //nib-kaos
-const authClientId = "yYHy96TTCEBMc4lYRAJVFh4K7Ibqbwrx" //Hand-off-prototype client
-const authAudience = "https://my.nib.com.au/api"        //Should be the same for all nib tenants
+const authDomain = "jacks-hackathon.au.auth0.com";                
+const authClientId = "7y2ODPzRMqWBBslxFPhprSKOyGStbtUr" 
+const authAudience = "https://jacks-api.com.au/api"
 
 ReactDOM.render(
   <React.StrictMode>

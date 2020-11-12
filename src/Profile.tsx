@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import styled from "styled-components"
-import Heading from '@nib-components/heading';
-import { SecondaryButton} from '@nib-components/button';
 import {Margin} from "styled-components-spacing"
 
 
@@ -37,7 +35,7 @@ function Profile() {
 
   return (
     <div>
-      <Heading size={3}>Succesfully logged in</Heading>
+      <h1>Succesfully logged in</h1>
       <div>Username: {user.name}</div>
       <div>Access Token:
         <TokenBox>
@@ -46,7 +44,7 @@ function Profile() {
       </div>
 
     <Margin top={5}>
-      <SecondaryButton onClick={()=>{logout({returnTo: window.location.origin})}}>Logout</SecondaryButton>
+      <button onClick={()=>{logout({returnTo: window.location.origin})}}>Logout</button>
       </Margin>
     </div>
     );
