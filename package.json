@@ -1,0 +1,55 @@
+{
+  "name": "blog-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/auth0-react": "^1.1.0",
+    "@auth0/auth0-spa-js": "^1.8.1",
+    "@nib-components/button": "^9.5.4",
+    "@nib-components/container": "^4.1.2",
+    "@nib-components/copy": "^3.3.1",
+    "@nib-components/form": "^5.3.3",
+    "@nib-components/form-control": "^4.0.4",
+    "@nib-components/header-footer-layout": "^9.0.0",
+    "@nib-components/heading": "^5.3.1",
+    "@nib-components/textarea": "^3.4.3",
+    "@nib-components/textbox": "^4.5.2",
+    "@nib-components/theme": "^5.2.3",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.42",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "prettier": "^2.1.2",
+    "query-string": "^6.13.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
+    "styled-components": "^5.2.0",
+    "styled-components-spacing": "^3.1.1",
+    "typescript": "^3.9.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
