@@ -44,10 +44,13 @@ function LoginPostForm() {
             console.log("returning anger");
             //@ts-ignore
             window.location = `https://jacks-hackathon.au.auth0.com/continue?state=${state}&anger=${true}`
+          } else {
+            console.log("not angry");
+             //@ts-ignore
+          window.location = `https://jacks-hackathon.au.auth0.com/continue?state=${state}&anger=${false}`
           }
 
-           //@ts-ignore
-          window.location = `https://jacks-hackathon.au.auth0.com/continue?state=${state}&anger=${false}`
+          
           // history.pushState()
         } catch(e) {
           throw e;
