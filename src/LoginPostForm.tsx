@@ -21,6 +21,7 @@ function LoginPostForm() {
     if(queries.state) {
       setState(queries ? queries.state.toString() : "")
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   function submitFile() {
